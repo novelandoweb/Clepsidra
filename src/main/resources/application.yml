@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: backend
+  profiles:
+    active: test
+  jpa:
+    open-in-view: true
+  threads:
+    virtual:
+      enabled: true
+api:
+  security:
+    token:
+      secret: ${JWT_SECRET:my-secret-key}
+
+
